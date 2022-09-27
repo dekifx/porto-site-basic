@@ -1,0 +1,325 @@
+* {
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1580213845113-a44868f9d8d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: contain;
+    background-position: center center;
+}
+
+.title_text{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    float: left;
+}
+.navbar a{
+    color: whitesmoke;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:rgb(96, 231, 255);
+    cursor: pointer; 
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.navigator{
+    padding-top: 4.5px;
+    height: fit-content;
+    justify-content: flex-end;
+}
+
+nav {
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+nav:hover{
+    cursor: default;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 10vw 138px;
+    border-radius: 20px;
+    background-color: #395b64;
+    max-width: 100%;
+}
+
+.hText {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: aliceblue;
+    font-size: larger;
+    max-width: 30vw;
+}
+
+#pfp {
+    border-radius: 50%;
+    object-fit: contain;
+    align-self: flex-start;
+    width: 350px;
+}
+
+.about {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    padding: 150px 5vw;
+}
+
+section.about h1 {
+    font-size: 35px;
+}
+
+section.about p {
+    max-width: 700px;
+}
+
+.edu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+article.edu figure {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+article.edu ul {
+    list-style-type: none;
+}
+
+.edu_img {
+    width: 65px;
+    padding: 7.5px 15px;
+}
+
+.bold_list {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.experiences {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    padding: 150px 5vw;
+    background-color: #395b64b2;
+}
+
+section.experiences h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+section.experiences h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+section.experiences article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+    text-align: right;
+}
+
+section.experiences li{
+    direction: rtl;
+}
+
+section.experiences ul {
+    padding-right: 20px;
+}
+
+.contact {
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    padding: 150px 5vw 140px;
+    max-width: 100%;
+}
+
+section.contact h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+section.contact h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.c_area {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+section.c_area form {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15vw;
+    justify-content: center;
+    padding: 20px;
+}
+
+section.c_area img {
+    width: 50px;
+}
+
+section.c_area textarea {
+    padding-top: 20px;
+    width: 40vw;
+    resize: none;
+    outline: none;
+    text-align: center;
+    border-radius: 15px;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 5px;
+    width: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background: linear-gradient(to right,#375861 ,#3a7f91);
+    background-color: #375861;
+    color: white;
+    font-family: Trebuchet MS;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(to right,#60747a ,#62919f);
+    background-color: #60747a;
+}
+
+input[type=submit]:active {
+transform: scale(0.95);
+}
+
+footer {
+    display: flex;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    height: 3vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 620px) {
+    nav {
+        height: fit-content;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51, 51, 51);
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 200px 10vw 138px;
+        border-radius: 20px;
+        background-color: #395b64;
+    }
+    
+    .hText {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        color: aliceblue;
+        font-size: larger;
+        max-width: 700px;
+        justify-content: center;
+    }
+    
+    #pfp {
+        border-radius: 50%;
+        object-fit: contain;
+        align-self: flex-start;
+        width: 250px;
+    }
+
+    .edu {
+        padding-right: 0;
+    }
+    .edu_img {
+        width: 0;
+        padding: 0;
+    }
+    article.edu ul {
+        list-style-type: circle;
+    }
+    
+    .contact {
+        gap: 15px;
+    }
+    
+    section.contact h1 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    
+    section.contact h2 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .c_area {
+        width: 100%;
+    }
+    
+    section.c_area form {
+        gap: 15px;
+    }
+}
