@@ -293,10 +293,12 @@ footer {
     .edu {
         padding-right: 0;
     }
+
     .edu_img {
         width: 0;
         padding: 0;
     }
+    
     article.edu ul {
         list-style-type: circle;
     }
